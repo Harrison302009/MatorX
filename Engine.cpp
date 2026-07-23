@@ -7,7 +7,7 @@ Engine::~Engine() {
 	clean();
 }
 
-bool Engine::init(char* title, int width, int height) {
+bool Engine::init(const char* title, int width, int height) {
 	if (SDL_Init(SDL_INIT_VIDEO) < 0)
 	{
 		cout << "SDL could not initialize. Error: " << SDL_GetError() << endl;
@@ -35,7 +35,7 @@ void Engine::handleEvents() {
 }
 
 void Engine::update() {
-	cout << "Updating game state..." << endl;
+	//cout << "Updating game state..." << endl;
 }
 
 void Engine::render() {
